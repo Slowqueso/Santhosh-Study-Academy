@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --palette-primary-orange: #fd9609;
+  --palette-primary-blue: #091f66;
+  --palette-primary-grey: #b4b4b4;
+
+  --font-primary-header: "Roboto Slab", serif;
+  --font-primary-subheader: "Roboto", serif;
+  --font-primary-text: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.centralise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+  height: 100vh;
+}
+.centralise .divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-together {
+  display: flex;
+  align-items: center;
+}
+.flex-together input[type="checkbox"] {
+  margin: 1rem;
+}
+.flex-together a {
+  margin-left: 1ch;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-26 {
+  font-size: 26px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-36 {
+  font-size: 36px;
+}
+
+.f-48 {
+  font-size: 48px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
