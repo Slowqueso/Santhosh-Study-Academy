@@ -10,7 +10,6 @@ function validateForm(event) {
     var phoneError = document.getElementById('phone-error');
     var messageError = document.getElementById('message-error');
 
-    // Reset error messages
     nameError.textContent = '';
     emailError.textContent = '';
     phoneError.textContent = '';
@@ -42,9 +41,6 @@ function validateForm(event) {
     } else {
         return false;
     }
-
-    // If all validations pass, you can perform further actions here
-    // For example, submit the form or perform additional processing
 
     return true;
 }
