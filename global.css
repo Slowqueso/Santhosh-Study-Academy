@@ -8,7 +8,7 @@ html {
   --palette-primary-orange: #fd9609;
   --palette-primary-blue: #091f66;
   --palette-primary-grey: #b4b4b4;
-
+  --palette-secondary-orange: #dbc467;
   --font-primary-header: "Roboto Slab", serif;
   --font-primary-subheader: "Roboto", serif;
   --font-primary-text: "Inter", sans-serif;
@@ -104,4 +104,15 @@ ul {
 
 .f-12 {
   font-size: 12px;
+}
+
+.header-border {
+  text-shadow: 1px 0 var(--palette-secondary-orange),
+    -1px 0 var(--palette-secondary-orange),
+    0 1px var(--palette-secondary-orange),
+    0 -1px var(--palette-secondary-orange),
+    1px 1px var(--palette-secondary-orange),
+    -1px -1px var(--palette-secondary-orange),
+    1px -1px var(--palette-secondary-orange),
+    -1px 1px var(--palette-secondary-orange);
 }
