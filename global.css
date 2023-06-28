@@ -36,6 +36,9 @@ body {
 ul {
   list-style: none;
 }
+button{
+  -webkit-tap-highlight-color: transparent;
+}
 
 .flex {
   display: flex;
@@ -96,6 +99,10 @@ ul {
 
 .f-36 {
   font-size: 36px;
+}
+
+.f-42{
+  font-size: 42px;
 }
 
 .f-48 {
