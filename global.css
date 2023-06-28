@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +13,7 @@ html {
 
   --font-primary-header: "Roboto Slab", serif;
   --font-primary-subheader: "Roboto", serif;
+  --font-primary-menu: "Poppins", sans-serif;
   --font-primary-text: "Inter", sans-serif;
 }
 
