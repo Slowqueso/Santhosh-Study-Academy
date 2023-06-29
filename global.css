@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,9 +10,10 @@ html {
   --palette-primary-orange: #fd9609;
   --palette-primary-blue: #091f66;
   --palette-primary-grey: #b4b4b4;
-
+  --palette-secondary-orange: #dbc467;
   --font-primary-header: "Roboto Slab", serif;
   --font-primary-subheader: "Roboto", serif;
+  --font-primary-menu: "Poppins", sans-serif;
   --font-primary-text: "Inter", sans-serif;
 }
 
@@ -111,4 +114,15 @@ button{
 
 .f-12 {
   font-size: 12px;
+}
+
+.header-border {
+  text-shadow: 1px 0 var(--palette-secondary-orange),
+    -1px 0 var(--palette-secondary-orange),
+    0 1px var(--palette-secondary-orange),
+    0 -1px var(--palette-secondary-orange),
+    1px 1px var(--palette-secondary-orange),
+    -1px -1px var(--palette-secondary-orange),
+    1px -1px var(--palette-secondary-orange),
+    -1px 1px var(--palette-secondary-orange);
 }
