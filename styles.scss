@@ -530,6 +530,7 @@ header {
         .learn_more:hover {
           background-color: #ffffff;
           color: rgb(0, 0, 0);
+          transition: 200ms ease-in-out;
         }
       }
     }
