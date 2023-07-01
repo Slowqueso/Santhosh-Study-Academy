@@ -1,6 +1,7 @@
 @import url(./global.css);
 body {
   scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
 }
 
 section,
@@ -11,7 +12,7 @@ header {
 section,
 header,
 footer {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 ::-webkit-scrollbar {
@@ -109,8 +110,8 @@ header .header_left .buttons a .enquire {
   background-color: white;
 }
 header .header_left .buttons a .enquire:hover {
-  background-color: #000;
-  color: white;
+  background-color: #d6d6d6;
+  color: black;
   transition: 200ms ease-in-out;
 }
 header .header_left .buttons a .learn_more {
@@ -119,8 +120,8 @@ header .header_left .buttons a .learn_more {
   border: 1px solid #000;
 }
 header .header_left .buttons a .learn_more:hover {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #242424;
+  color: white;
   transition: 200ms ease-in-out;
 }
 header .carousel {
@@ -476,6 +477,9 @@ html {
   padding: 0.5rem 1.5rem;
   transition: 100ms ease;
 }
+.contact .contact2 form .form-submit:focus {
+  outline: 1px solid black;
+}
 .contact .contact2 form .form-submit:hover {
   background: #d19b3e;
   color: #ffffff;
@@ -493,6 +497,14 @@ html {
 }
 
 @media only screen and (max-width: 821px) {
+  body {
+    scroll-snap-type: none;
+  }
+  section,
+  header,
+  footer {
+    scroll-snap-align: none;
+  }
   section {
     height: -moz-fit-content;
     height: fit-content;
@@ -750,6 +762,7 @@ html {
 .footer {
   background-color: #24262b;
   padding: 70px 0 10px 0;
+  margin-top: 2rem;
 }
 .footer .inner-container {
   max-width: 1170px;
@@ -757,6 +770,7 @@ html {
 }
 .footer .inner-container .row {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .footer .inner-container .row .footer-col {
