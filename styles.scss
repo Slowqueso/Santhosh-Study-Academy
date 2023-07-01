@@ -1,8 +1,19 @@
 @import url(./global.css);
 
+// =========== Body =============
+body {
+  scroll-snap-type: y proximity;
+}
+
 section,
 header {
   height: 100vh;
+}
+
+section,
+header,
+footer {
+  scroll-snap-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -16,12 +27,12 @@ header {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FCC767;
+  background: #fcc767;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #E29C1D;
+  background: #e29c1d;
 }
 
 // =========== Class CSS ===============
@@ -219,6 +230,7 @@ header {
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 //========== Navbar ============
@@ -254,7 +266,7 @@ html {
       width: fit-content;
 
       .nav-link {
-        color: #3f3f3f;
+        color: #222222;
         font-size: 16px;
         font-family: var(--font-primary-menu);
         font-weight: 500;
@@ -273,6 +285,10 @@ html {
         background-color: #f5c66f;
         transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
         // transform: translateX(-50%);
+      }
+
+      .nav-link:hover {
+        color: #494949;
       }
 
       .nav-link:hover::after {
@@ -900,7 +916,6 @@ html {
   }
 }
 
-
 // ================ Footer ================
 
 .footer {
@@ -929,7 +944,7 @@ html {
         }
 
         h4::before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0;
           bottom: -10px;
@@ -1018,7 +1033,6 @@ html {
         }
       }
     }
-
   }
 
   p.copyright-footer {
@@ -1026,7 +1040,7 @@ html {
     padding: 10px 0 5px 0;
   }
 
-  .footer-hr{
+  .footer-hr {
     display: block;
     margin: 60px 0px 20px;
     width: 100%;
@@ -1035,11 +1049,10 @@ html {
     background-color: #ffffff;
     // color: #ffffff;
   }
-  .copyright-footer{
+  .copyright-footer {
     color: #ffffff;
     font-size: 0.8rem;
   }
-
 }
 
 /*responsive*/
@@ -1054,7 +1067,6 @@ html {
       }
     }
   }
-
 }
 
 @media only screen and (max-width: 574px) {
