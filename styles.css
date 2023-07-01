@@ -249,6 +249,9 @@ html {
 #aboutus {
   display: flex;
   align-items: center;
+  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #aboutus .wrapper {
   margin: auto;
@@ -305,6 +308,55 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.facilities {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.facilities h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.facilities .facilities_img {
+  width: 70%;
+  height: 80vh;
+}
+.facilities .facilities_img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.facilities ul {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.facilities ul li {
+  flex: 0 0 45%;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-block: 2vw;
+  font-family: var(--font-primary-text);
+  font-size: 20px;
+}
+.facilities ul li span {
+  background-color: #FFCB8E;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 .contact {
@@ -662,6 +714,9 @@ html {
     background: transparent;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
+  }
+  .facilities .flex {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 512px) {
