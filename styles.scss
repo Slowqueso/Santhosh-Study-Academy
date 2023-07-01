@@ -9,7 +9,9 @@ body {
 
 section,
 header {
-  height: 100vh;
+  // height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
 }
 
 section,
@@ -442,7 +444,6 @@ html {
     li {
       flex: 0 0 45%;
       width: fit-content;
-      text-align: center;
       height: fit-content;
       margin-block: 2vw;
       font-family: var(--font-primary-text);
@@ -482,7 +483,7 @@ html {
       display: flex;
       gap: 7rem;
       align-items: center;
-
+      
       * {
         z-index: 10;
       }

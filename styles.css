@@ -6,7 +6,9 @@ body {
 
 section,
 header {
-  height: 100vh;
+  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 section,
@@ -378,7 +380,6 @@ html {
   flex: 0 0 45%;
   width: -moz-fit-content;
   width: fit-content;
-  text-align: center;
   height: -moz-fit-content;
   height: fit-content;
   margin-block: 2vw;
