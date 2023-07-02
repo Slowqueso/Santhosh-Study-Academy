@@ -1042,6 +1042,42 @@ html {
       }
     }
   }
+
+  .facilities {
+    .wrapper {
+      .flex {
+        h1 {
+          margin: auto;
+          text-align: center;
+        }
+        h3 {
+          font-size: 1em;
+        }
+        ul {
+          gap: 2rem 0rem;
+          // border: 1px solid black;
+          // justify-content: space-between;
+          // flex-direction: column;
+          width: fit-content;
+          li {
+            flex: 1 0 45%;
+            width: fit-content;
+            padding: 0;
+            background: transparent;
+          }
+        }
+      }
+
+      .facilities_img {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 // ================ Footer ================
