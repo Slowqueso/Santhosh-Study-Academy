@@ -5,6 +5,21 @@ const slideDuration = 3000; // Change slide every 3 seconds
 let currentIndex = 0;
 let timerId = null;
 
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  if (scrollPosition > 50) {
+    navbar.style.backgroundColor = 'white';
+    navbar.style.position = 'fixed';
+  } else {
+    navbar.style.backgroundColor = 'transparent';
+    navbar.style.position = 'sticky';
+
+  }
+});
+
+
 function changeSlide(index) {
   const activeSlide = slides.querySelector("[data-active]");
   if (activeSlide) {
