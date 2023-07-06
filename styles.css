@@ -10,6 +10,7 @@ body .floaters {
   bottom: 1rem;
   right: 1rem;
   z-index: 100;
+  width: -moz-fit-content;
   width: fit-content;
 }
 body .floaters .phone {
@@ -35,6 +36,7 @@ body .floaters .floating:hover {
   transition: 200ms ease-in-out;
 }
 body .floaters .floating i {
+  width: -moz-fit-content;
   width: fit-content;
 }
 body .floaters .whatsapp i {
@@ -47,6 +49,7 @@ body .floaters .phone i {
 section,
 header {
   min-height: 100vh;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -121,12 +124,14 @@ header .header_left .buttons {
 header .header_left .buttons a {
   text-decoration: none;
   margin: 0;
+  width: -moz-fit-content;
   width: fit-content;
   -webkit-tap-highlight-color: transparent;
 }
 header .header_left .buttons a button {
   display: flex;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 32px;
   font-size: 16px;
@@ -137,9 +142,11 @@ header .header_left .buttons a button {
   cursor: pointer;
 }
 header .header_left .buttons a button i {
+  width: -moz-fit-content;
   width: fit-content;
 }
 header .header_left .buttons a button span {
+  width: -moz-max-content;
   width: max-content;
 }
 header .header_left .buttons a .enquire {
@@ -172,7 +179,8 @@ header .carousel {
   padding: 50px;
   border-radius: 15px;
   background: rgba(233, 233, 233, 0.2);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
 }
 header .carousel ul {
   margin: 0;
@@ -191,8 +199,10 @@ header .carousel .slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 5px;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
@@ -250,7 +260,6 @@ html {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
@@ -262,6 +271,7 @@ html {
 }
 .navbar .nav-menu .nav-item {
   list-style: none;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .navbar .nav-menu .nav-item .nav-link {
@@ -321,6 +331,7 @@ html {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  height: -moz-fit-content;
   height: fit-content;
 }
 #aboutus .wrapper {
@@ -355,7 +366,8 @@ html {
   position: relative;
   z-index: 5;
   max-height: 505px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100vw;
   width: 100vw;
 }
@@ -391,6 +403,7 @@ html {
 }
 .facilities .wrapper .flex {
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
@@ -408,7 +421,9 @@ html {
   filter: blur(75px);
 }
 .facilities .wrapper h1 {
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .facilities .wrapper h3 {
@@ -425,7 +440,8 @@ html {
   align-items: center;
 }
 .facilities .wrapper .facilities_img img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: auto;
   height: 70vh;
   position: relative;
@@ -450,16 +466,25 @@ html {
   padding: 1.5rem 1rem;
   border-radius: 16px;
   flex: 0 0 45%;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   font-family: var(--font-primary-text);
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 .facilities .wrapper ul li span {
   background-color: #ffcb8e;
   border: 1px solid black;
   border-radius: 50%;
   padding: 5px;
+  margin-right: 10px;
+}
+.facilities .wrapper ul li img {
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
 }
 
@@ -504,6 +529,7 @@ html {
   text-align: left;
 }
 .contact .contact1 {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .contact .contact1 .contact-content {
@@ -519,6 +545,7 @@ html {
 .contact .contact1 .contact-info-wrapper {
   display: flex;
   flex-direction: column;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 0.75rem;
 }
@@ -531,6 +558,7 @@ html {
 .contact .contact1 .contact-info-wrapper .contact-info i {
   border-radius: 50%;
   font-size: 20px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem;
   color: white;
@@ -584,6 +612,7 @@ html {
   outline: none;
 }
 .contact .contact2 form .form-submit {
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 4px;
   background: #f2bb5e;
@@ -624,6 +653,7 @@ html {
     scroll-snap-align: none;
   }
   section {
+    height: -moz-fit-content;
     height: fit-content;
     min-height: 100vh;
   }
@@ -736,6 +766,7 @@ html {
 }
 @media screen and (max-width: 900px) {
   header {
+    height: -moz-fit-content;
     height: fit-content;
     background: none;
   }
@@ -767,6 +798,7 @@ html {
   }
   .header_wrapper .header_left h3,
   .header_wrapper .header_left p {
+    width: -moz-fit-content;
     width: fit-content;
     text-align: center;
   }
@@ -777,11 +809,13 @@ html {
     padding: 2rem;
   }
   .header_wrapper .header_left .buttons {
+    width: -moz-fit-content;
     width: fit-content;
     gap: 20px;
   }
   .header_wrapper .header_left .buttons a button {
     padding: 10px 32px;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 14px;
     line-height: 24px;
@@ -818,7 +852,8 @@ html {
   .header_wrapper .carousel .slide {
     padding: 2.5rem;
     background: transparent;
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
   .facilities .flex {
     flex-direction: column;
@@ -882,10 +917,12 @@ html {
   }
   .facilities .wrapper .flex ul {
     gap: 2rem 0rem;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .facilities .wrapper .flex ul li {
     flex: 1 0 45%;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0;
     background: transparent;
