@@ -5,9 +5,9 @@ body {
   scroll-snap-type: y proximity;
   // scroll-padding: 4rem;
   scroll-snap-stop: always;
-  .floaters:hover {
-    transform: translateX(2rem);
-  }
+  // .floaters:hover {
+  //   transform: translateX(2rem);
+  // }
   .floaters {
     transition: 200ms ease;
     display: flex;
@@ -20,7 +20,7 @@ body {
     bottom: 0;
     top: 0;
     // right: 1rem;
-    left: -2rem;
+    left: 0rem;
     z-index: 100;
     margin: auto;
     padding: 1rem 0.25rem 1rem 0rem;
