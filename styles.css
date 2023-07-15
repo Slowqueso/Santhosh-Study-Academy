@@ -211,8 +211,8 @@ header .carousel {
   position: relative;
   justify-content: center;
   align-self: center;
-  height: 70vh;
-  width: 50vw;
+  height: 85vh;
+  width: 48vw;
   padding: 50px;
   border-radius: 15px;
   background: rgba(233, 233, 233, 0.2);
@@ -379,6 +379,15 @@ html {
   align-items: center;
   gap: 10%;
 }
+#aboutus .wrapper .about-image1 {
+  border: 5px solid #f8b508;
+  border-radius: 50%;
+  max-height: 450px;
+  max-width: 450px;
+}
+#aboutus .wrapper .about-image1 img {
+  padding: 3rem;
+}
 #aboutus .wrapper .about-image {
   position: relative;
   border: 5px solid #f8b508;
@@ -405,7 +414,7 @@ html {
   max-height: 505px;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 100vw;
+  height: 100vh;
   width: 100vw;
 }
 #aboutus .wrapper .about-image::after {
@@ -480,8 +489,6 @@ html {
 .facilities .wrapper .facilities_img img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: auto;
-  height: 70vh;
   position: relative;
   z-index: 10;
   transition: 200ms ease;
@@ -996,7 +1003,7 @@ html {
   flex-wrap: wrap;
 }
 .footer .inner-container .row .footer-col {
-  width: 25%;
+  width: 45%;
   padding: 0 15px;
 }
 .footer .inner-container .row .footer-col h4 {
